@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                margin: 0;
+            }
+            
+            #logo{
+                background-color: rgba(255, 0 , 0, 0.5);
+                width: 25%;
+                height: 20vh;
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 1000;
+            }
+            
+            #nav{
+                position: fixed;
+                background-color: rgba(0, 0, 255, 0.5);
+                width: 75%;
+                height: 20vh;
+                top: 0;
+                right: 0;
+                z-index: 1000;
+            }
+            
+            #main{
+                background-color: orange;
+                width: 100%;
+                min-height: 60vh;
+                margin-top: 20vh;
+                position: relative;
+            }
+            
+            #footer{
+                background-color: yellow;
+                width: 100%;
+                height: 20vh;
+            }
+            
+            .column{
+                box-sizing: border-box;
+                display: inline-block;
+                vertical-align: top;
+            }
+            
+            #image{
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="logo" class="column">
+        </div><!--
+        --><div id="nav" class="column">
+        
+        </div><!--
+        --><div id="main" class="column">
+            <h1>Test Text</h1>
+            <br/>
+            <img id="image" src="https://upload.wikimedia.org/wikipedia/commons/e/eb/Ash_Tree_-_geograph.org.uk_-_590710.jpg" />
+            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+            More Text
+
+        </div><!--
+        --><div id="footer" class="column">
+            <h1>Footer Text</h1>
+        </div>
+    </body>
+</html>
