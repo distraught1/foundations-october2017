@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #flex{
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                height: 100vh;
+                justify-content: space-around;
+                align-items: stretch;
+            }
+            
+            .item{
+                margin: 2vw;
+                padding: 2vw;
+                border: 1px solid black;
+                box-sizing: border-box;
+            }
+            
+            .galleryImage{
+                height: 50vh;
+            }
+            
+            @media all and (min-width: 1000px){
+                #special{
+                    order: 100;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="flex">
+            <div class="item" id="special">
+                <img class="galleryImage" src="https://www.arborday.org/images/hero/medium/hero-ring-of-trees-looking-up.jpg" />
+            </div>
+            <div class="item">
+                <img class="galleryImage" src="http://gg-deco.rlcgeek.com/djmorcabinwater/trees/tree-3.png" />
+            </div>
+            <div class="item">
+                <img class="galleryImage" src="https://i.pinimg.com/736x/9f/1e/ec/9f1eec432e977b1972ef7e09812ee091--a-park-fig-tree.jpg" />
+            </div>
+            <div class="item">
+                <img class="galleryImage" src="http://www.kevinboulanger.net/imagestb/treetimelapse2.jpg" />
+            </div>
+            <div class="item">
+                <img class="galleryImage" src="https://shop.arborday.org/images/tree-nursery/thumb-popular-trees.jpg" />
+            </div>
+        </div>
+    </body>
+</html>
