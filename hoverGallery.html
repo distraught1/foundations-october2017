@@ -22,27 +22,51 @@
                 color: white;
             }
             
+            .centered{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            
             .image{
                 height: 20vh;
+            }
+            
+            .galleryContainer{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                flex-flow: row wrap;
             }
         </style>
     </head>
     <body>
-        <div class="galleryImage">
-            <img class="image" src="https://www.fast-growing-trees.com/images/T/Leyland_Cypress_THUMB.jpg" />
-            <div class="overlay">TEXT</div>
-        </div>
-        <div class="galleryImage">
-            <img class="image" src="https://www.fast-growing-trees.com/images/T/Leyland_Cypress_THUMB.jpg" />
-            <div class="overlay">TEXT</div>
-        </div>
-        <div class="galleryImage">
-            <img class="image" src="https://www.fast-growing-trees.com/images/T/Leyland_Cypress_THUMB.jpg" />
-            <div class="overlay">TEXT</div>
-        </div>
-        <div class="galleryImage">
-            <img class="image" src="https://www.fast-growing-trees.com/images/T/Leyland_Cypress_THUMB.jpg" />
-            <div class="overlay">TEXT</div>
+        <div class="galleryContainer">
+            <div class="galleryImage">
+                <img class="image" src="https://www.fast-growing-trees.com/images/T/Leyland_Cypress_THUMB.jpg" />
+                <div class="overlay">
+                    <div class="centered">TEXT1 TEXT2 TEXT 3 TEXT 4 TEXT 5</div>
+                </div>
+            </div>
+            <div class="galleryImage">
+                <img class="image" src="https://www.fast-growing-trees.com/images/T/Leyland_Cypress_THUMB.jpg" />
+                <div class="overlay">
+                    <div class="centered">TEXT 5</div>
+                </div>
+            </div>
+            <div class="galleryImage">
+                <img class="image" src="https://www.fast-growing-trees.com/images/T/Leyland_Cypress_THUMB.jpg" />
+                <div class="overlay">
+                    <div class="centered">TEXT3 TEXT4</div>
+                </div>
+            </div>
+            <div class="galleryImage">
+                <img class="image" src="https://www.fast-growing-trees.com/images/T/Leyland_Cypress_THUMB.jpg" />
+                <div class="overlay">
+                    <div class="centered">TEXT1 TEXT2</div>
+                </div>
+            </div>
         </div>
     </body>
 </html>
